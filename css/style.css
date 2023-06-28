@@ -65,6 +65,7 @@ h1 {
 h2 {
 	font-size: 45px;
 	font-weight: bold;
+	color: #318f9d !important;
 }
 h3 {
 	font-size: 30px;
@@ -116,15 +117,15 @@ section {
 	width: 100%;
 }
 .overlay {
-	background: rgba(67,166,216,0.7);
+	background: rgba(58,178,134,0.7);
 }
 /*=======================================================
 			BUTTON
 ========================================================*/
 .btn {
-	background: #3dc5df;
+	background: #3aa2b2;
 	color: #fff;
-	border: 2px solid #3dc5df;
+	border: 2px solid #3aa2b2;
 	border-radius: 0px;
 	display: inline-block;
 	padding: 12px 30px;
@@ -141,15 +142,15 @@ section {
 }
 .btn:hover {
 	background: none;
-	color: #3dc5df;
-	border-color: #3dc5df;
+	color: #2a7c89;
+	border-color: #2a7c89;
 }
 .btn-1 {
 	background: none;
-	color: #3dc5df;
+	color: #3aa2b2;
 }
 .btn-1:hover {
-	background: #3dc5df;
+	background: #2a7c89;
 	color: #fff;
 }
 .form-control {
@@ -419,7 +420,7 @@ header nav .ownmenu .indicator {
 	display: none;
 }
 header nav li a:hover {
-	color: #3dc5df;
+	color: #3ab286;
 }
 header nav li {
 }
@@ -447,13 +448,13 @@ header .ownmenu ul.dropdown li a {
 	width: 100%;
 }
 header .ownmenu ul.dropdown li a:hover {
-	background: #3dc5df;
+	background: #3aa2b2;
 	color: #fff;
 }
 header .ownmenu ul.dropdown li:nth-last-child(1) a {
 }
 .ownmenu > li:hover > a, .ownmenu > li.active > a {
-	color: #3dc5df;
+	color: #3aa2b2;
 }
 .nav-post .boder-da-r {
 	border-right: 1px solid #e5e5e5;
@@ -478,7 +479,7 @@ header .ownmenu ul.dropdown li:nth-last-child(1) a {
 .ownmenu li > .megamenu li:hover {
 }
 .ownmenu li > .megamenu li a:hover {
-	background: #3dc5df;
+	background: #3aa2b2;
 	color: #fff;
 }
 ul.dropdown {
@@ -610,49 +611,61 @@ header.header-2 nav {
 			BANNER
 ========================================================*/
 #banner {
-	background-image: url(../images/woman-smiles-broadly-points-her-perfect-even-teeth-indicates-corners-lips-looks-away-wears-casual-blue-jumper-isolated-white-with-blank-copy-space.jpg);
 	background-size: cover;
+	overflow: hidden;
 }
 .main-bnr {
 	position: relative;
 	height: 100%;
 }
-.main-bnr img {
+.content-container {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+	margin-top: 10%;
+}
+.content-container>div {
+	min-width: 50%;
+	height: auto;
+}
+#mainvideo {
+	z-index: -1;
+	transform: scale(1.2);
+	position: fixed;
 	width: 100%;
 	height: 100%;
 }
 .main-bnr-text {
-	text-align: center;
+	min-width: 50%;
+	text-align: left;
 	padding: 10%;
-	padding-top: 30%;
+	margin-top: 5%;
+	margin-left: 15%;
 }
 .main-bnr-text h5 {
-	color: #3dc5df;
+	color: #000;
 	text-transform: uppercase;
 	letter-spacing: 3px;
 	font-weight: 500;
 }
 .main-bnr-text h1 {
-	color: #3dc5df;
+	color: #2a7e8b;
 	font-weight: bold;
 	margin-bottom: 50px;
 }
 .main-bnr-text .btn {
-	background-color: #3dc5df;
+	background-color: #3aa2b2;
+	border-color: transparent;
 	color: #fff;
 	margin-top: 50px;
 }
 .main-bnr-text p {
-	color: rgba(42, 42, 42, 1);
+	color: #000;
+	font-size: 4rem;
+	font-weight: bold;
 }
-.main-bnr-bg {
-	background-size: cover;
-	position: relative;
-	z-index: 99;
-	position: absolute;
-	height: 100%;
-	right: 0;
-}
+
 .go-down {
 	position: absolute;
 	bottom: 40px;
@@ -696,7 +709,7 @@ header.header-2 nav {
 }
 .home-3 .bnr-info .btn {
 	margin-top: 40px;
-	border-color: #3dc5df;
+	border-color: #3aa2b2;
 	color: #fff;
 }
 .home-3 .bnr-info .btn:hover {
@@ -756,7 +769,7 @@ header.header-2 nav {
 	margin-bottom: 10px;
 	font-size: 34px;
 	font-weight: bold;
-	color: #3dc5df;
+	color: #3ab286;
 	text-transform: uppercase;
 }
 .sub-banner p {
@@ -771,47 +784,19 @@ header.header-2 nav {
 	margin-top: -5px;
 }
 /*=======================================================
-			WHY CHOOSE US
-========================================================*/
-#why-choose {
-	background: #ffffff;
-	padding: 80px 0;
-	padding-bottom: 0px;
-}
-#why-choose ul li {
-	margin-bottom: 30px;
-	padding-left: 30px;
-}
-#why-choose ul li p {
-	font-size: 14px;
-	color: #8c8c8c;
-	line-height: 24px;
-}
-#why-choose ul li:before {
-	content: '\f05d';
-	font-family: 'FontAwesome';
-	font-size: 20px;
-	left: 0px;
-	top: 5px;
-	color: #3dc5df;
-	position: absolute;
-}
-#why-choose img {
-	display: inline-block;
-}
-/*=======================================================
 			SERVICES
 ========================================================*/
 #services {
 	position: relative;
 	z-index: 99;
+	margin: 10% 0;
 }
 #services ul {
 	margin-bottom: 0px;
 	display: flex;
 }
 #services li {
-	background: #3dc5df;
+	background: #3ab286;
 	padding: 20px;
 	color: #fff;
 	text-align: center;
@@ -841,16 +826,16 @@ header.header-2 nav {
 	transition: all 0.4s ease-in-out;
 }
 #services li:nth-child(1) {
-	background: #3dc5df;
+	background: #3aa2b2;
 }
 #services li:nth-child(2) {
-	background: #39bad3;
+	background: #318f9d;
 }
 #services li:nth-child(3) {
-	background: #37b3cc;
+	background: #3aa2b2;
 }
 #services li:nth-child(4) {
-	background: #35acc4;
+	background: #318f9d;
 }
 #services li:hover {
 	color: #333333;
@@ -862,9 +847,163 @@ header.header-2 nav {
 #services li:hover h5 {
 	color: #333333;
 }
+#services li:hover .icon {
+	color: #3aa2b2 !important;
+}
 #services .tittle-2 {
 	margin-bottom: 20px;
 }
+/*=======================================================
+			ABOUT US
+========================================================*/
+#aboutus .about-bg {
+	width: 100%;
+	min-height: 600px;
+	background-image: url(../images/about-bg.png);
+	background-size: cover;
+	display: flex;
+}
+#aboutus .about-bg div {
+	max-width: 50%;
+	align-items: center;
+	display: flex;
+}
+.about-logo img {
+	width: 100%;
+	margin-left: 15%;
+}
+.about-content {
+	flex-direction: column;
+	justify-content: center;
+	padding-right: 10%;
+}
+.about-content h2 {
+	width: 100%;
+	margin-bottom: 5%;
+}
+.about-content p {
+
+}
+/*=======================================================
+			founder
+========================================================*/
+#founder {
+	padding: 100px 0;
+	margin-bottom: 5%;
+}
+
+#founder h2 {
+	margin-top: 0;
+	margin-bottom: 10%;
+}
+#founder .slide h4 {
+	font-weight: bold;
+	margin-top: 40px;
+	
+}
+#founder .slide {
+	text-align: center;
+}
+#founder .slide img {
+	max-height: 350px;
+	object-fit: cover;
+	object-position: center center;
+}
+#founder .slide .bottomCenter {
+	object-position: bottom center;
+}
+#founder .owl-dots {
+	position: absolute;
+	left: 35%;
+}
+/*=======================================================
+			VISIT US
+========================================================*/
+.visit {
+	background-color: #f7f7f7;
+	margin-top: 10%;
+}
+.visit .container {
+	padding: 5% 0; 
+	display: flex;
+
+}
+.visit .container .visit-img {
+	flex-basis: 60%;
+	max-width: 60%;
+	overflow: hidden;
+}
+.visit .container .visit-img img {
+	width: 100%;
+	padding-right: 10%;
+}
+.visit .container .visit-content {
+	flex-basis: 50%;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+.visit-content h2 {
+	margin-bottom: 10%;
+}
+.visit-content i {
+	font-size: 25px;
+	color: 	#3aa2b2;
+	margin-right: 10px;
+	margin-top: 10px;
+}
+/*=======================================================
+			GOOGLE MAP
+========================================================*/
+.mapouter{
+	position:relative;
+	text-align:right;
+	width:100%;
+	height:400px;
+}
+.gmap_canvas {
+	overflow:hidden;
+	background:none!important;
+	width:100%;
+	height:400px;
+}
+.gmap_iframe {
+	height:400px!important;
+}
+/*=======================================================
+			WHY CHOOSE US
+========================================================*/
+#why-choose {
+	padding: 80px 0;
+	padding-bottom: 0px;
+}
+#why-choose ul li {
+	margin-bottom: 30px;
+	padding-left: 30px;
+}
+#why-choose ul li p {
+	font-size: 14px;
+	line-height: 24px;
+}
+#why-choose ul li:before {
+	content: '\f05d';
+	font-family: 'FontAwesome';
+	font-size: 20px;
+	left: 0px;
+	position: absolute;
+}
+#why-choose img {
+	display: inline-block;
+}
+
+#why-choose h2 {
+}
+
+#why-choose h6 {
+}
+
 /*=======================================================
 			OFFER SERVICES
 ========================================================*/
@@ -940,24 +1079,7 @@ header.header-2 nav {
 	background: none !important;
 	font-size: 18px;
 }
-/*=======================================================
-			founder
-========================================================*/
-#founder {
-	padding: 100px 0;
-}
-#founder .slide h4 {
-	font-weight: bold;
-	margin-top: 40px;
-}
-#founder .slide {
-	text-align: center;
-}
-#founder .owl-dots {
-	position: absolute;
-	left: -52%;
-	top: 80%;
-}
+
 /*=======================================================
 			DEPARTMENT
 ========================================================*/
@@ -983,7 +1105,8 @@ header.header-2 nav {
 	min-height: 745px;
 }
 .department .nav-tabs {
-	background: #3dc5df;
+	background: rgb(58,162,178);
+	background: linear-gradient(127deg, rgba(58,162,178,1) 27%, rgba(49,143,157,1) 100%);
 	width: 100%;
 	display: flex;
 	flex-direction: column;
@@ -1039,7 +1162,7 @@ header.header-2 nav {
 }
 /*====	OVERVIEW BG	====*/
 .department .depart-bg-over {
-	background: url(../images/orthodontics-in-willowpark.jpeg) center center no-repeat;
+	background: url(../images/overview.jpg) center center no-repeat;
 	position: relative;
 	background-size: cover;
 	height: 100%;
@@ -1053,28 +1176,28 @@ header.header-2 nav {
 }
 /*====	CARDIOOGY BG	====*/
 .department .cardio-bg {
-	background: url(../images/restorative-dentistry-near-you.jpeg) center center no-repeat;
+	background: url(../images/restorative-dentistry.jpeg) center center no-repeat;
 	position: relative;
 	background-size: cover;
 	height: 100%;
 }
 /*====	FOR DISABLE BG	====*/
 .department .for-dis-bg {
-	background: url(../images/preventative-dentistry-in-willowpark.jpeg) center center no-repeat;
+	background: url(../images/surgery.jpg) center center no-repeat;
 	position: relative;
 	background-size: cover;
 	height: 100%;
 }
 /*====	Ophthalmology BG	====*/
 .department .opth-bg {
-	background: url(../images/oral-surgery-in-willowpark.jpeg) center center no-repeat;
+	background: url(../images/cosmetic-dentistry.jpeg) center center no-repeat;
 	position: relative;
 	background-size: cover;
 	height: 100%;
 }
 /*====	EMERGENCY BG	====*/
 .department .emer-bg {
-	background: url(../images/cosmetic-dentistry-near-you.jpeg) center center no-repeat;
+	background: url(../images/orthodontics.jpeg) center center no-repeat;
 	position: relative;
 	background-size: cover;
 	height: 100%;
@@ -3045,27 +3168,39 @@ header.header-2 nav {
 			INTRO
 ========================================================*/
 .intro {
+	margin: 5% 0;
 	padding: 80px 0;
 	text-align: center;
+	background-image:url(../images/newpatient.jpg);
+	background-size: cover;
+	background-position: center center;
+	background-attachment: fixed;
 }
-.intro h3 {
-	font-weight: bold;
-	text-align: center;
-	line-height: 48px;
-	font-size: 34px;
-	width: 77%;
-	margin: 0 auto;
+.intro .intro-in h2 {
+	margin-bottom: 10%;
 }
 .intro .intro-in {
 	width: 70%;
 	margin: 0 auto;
+	padding: 2%;
+	background-color: rgba(255,255,255,0.8);
+}
+.intro .intro-in ul {
+	margin-top: -5%;
 }
 .intro .intro-in li {
-	text-align: left;
+	text-align: center;
+	width: 100%;
+	margin: 1% 0;
+}
+.intro .intro-in li i {
+	color: #3aa2b2;
+	font-size: 20px;
+	margin-right: 10px;
 }
 .intro .intro-in .btn {
 	margin: 20px;
-	margin-bottom: 0px;
+	margin-bottom: 30px;
 	margin-top: 30px;
 }
 /*=======================================================
@@ -3181,7 +3316,7 @@ header.header-2 nav {
 }
 .contact-info i {
 	font-size: 32px;
-	color: #333333;
+	color: 	#3aa2b2;
 }
 .contact-info p {
 	margin-bottom: 0px;
@@ -4129,7 +4264,7 @@ ul.countdown li p {
 			Footer
 ========================================================*/
 footer {
-	background: #212121;
+	background: rgb(58,162,178);
 	position: relative;
 	z-index: 99;
 }
@@ -4141,6 +4276,11 @@ footer h5 {
 	letter-spacing: 2px;
 	margin-bottom: 20px;
 }
+
+footer h5 img {
+	width: 100%;
+	height: auto;
+}
 footer .latest-tweet {
 	margin-top: 80px;
 }
@@ -4148,24 +4288,23 @@ footer .latest-tweet span {
 	font-size: 12px;
 }
 footer p {
-	color: #757575;
+	color: #fff;
 }
-footer p a {
-	color: #f7f7f7;
+footer a {
+	color: #fff;
+	margin: 10px;
 }
 footer ul li {
 	margin-bottom: 20px;
 }
 footer span {
-	color: #3dc5df;
+	color: #fff;
 }
 footer .date {
 	display: inline-block;
 	width: 100%;
 	text-align: right;
-	color: #757575;
-}
-footer h5 {
+	color: #fff;
 }
 footer .small-info {
 	text-align: center;
@@ -4174,76 +4313,12 @@ footer .small-info {
 	border-bottom: none;
 	border-top: none;
 }
-footer .small-info img {
-	margin-bottom: 30px;
-}
-footer .small-info .social_icons {
+footer .small-info .footersns {
 	text-align: center;
 	display: inline-block;
 	width: 100%;
 	margin-top: 20px;
-	padding-bottom: 20px;
-	margin-bottom: 40px;
-	border-bottom: 1px dashed rgba(255,255,255,0.4);
-}
-footer .small-info .social_icons li {
-	float: none;
-	margin: 0 5px;
-}
-footer .small-info .social_icons li a {
-	font-size: 12px;
-	background: #151515;
-	height: 32px;
-	width: 32px;
-	line-height: 32px;
-	border-radius: 50%;
-	color: #757575;
-	border: none;
-}
-footer form {
-	display: inline-block;
-	width: 100%;
-	margin-top: 20px;
-}
-footer form input {
-	border-radius: 0px;
-	display: inline-block;
-	width: 100%;
-	height: 40px;
-	padding: 0 10px;
-	border: none;
-	float: left;
-	width: 70%;
-	font-size: 12px;
-	background: rgba(255,255,255,0.05);
-	border: 2px solid rgba(255,255,255,0.1);
-	border-right: none;
-}
-footer form button {
-	border: 2px solid rgba(255,255,255,0.18);
-	background: none;
-	font-size: 14px;
-	color: #696969;
-	float: right;
-	width: 30%;
-	height: 40px;
-	display: inline-block;
-	padding: 8px 20px;
-	font-weight: bold;
-}
-footer .links {
-	margin-top: 80px;
-}
-footer .links li {
-	margin-bottom: 0px;
-}
-footer .links a {
-	color: #757575;
-	line-height: 30px;
-	display: inline-block;
-	width: 100%;
-}
-footer .links a:hover {
+	font-size: 30px;
 	color: #fff;
 }
 footer .timing {
@@ -4251,10 +4326,19 @@ footer .timing {
 }
 footer .timing p span {
 	margin-left: 10px;
-	color: #757575;
+	color: #fff;
+}
+.footermenu {
+	margin-top: 100px;
+}
+.footermenu ul {
+	text-align: center;
+}
+.footermenu ul li {
+	font-size: 1.5rem;
 }
 .rights {
-	background: #1b1b1b;
+	background: rgb(58,162,178);
 	text-align: center;
 	padding: 20px 0;
 }
