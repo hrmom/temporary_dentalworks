@@ -511,7 +511,6 @@ header .btn-right .btn:hover i {
 .sub-banner {
 	background-color:rgba(58, 162, 178, 1);
 	margin-top: -5px;
-	padding-top: 5%;
 }
 
 .sub-banner h3 {
@@ -921,6 +920,7 @@ header .btn-right .btn:hover i {
 .service-us  .text-container h3 {
 	color: #1f626d;
 	font-size: 20px;
+	margin-top: 0;
 }
 .dep-detail-page .qoute {
 	position: absolute;
@@ -1190,8 +1190,8 @@ header .btn-right .btn:hover i {
 			PAGE_CONTACT FORM
 ========================================================*/
 .contact-us {
-	min-height: 600px;
-	background: url(../images/contact-bg.jpg) top center no-repeat;
+	min-height: 550px;
+	background: url(../images/contact-bg.jpg) center center no-repeat;
 	background-size: cover;
 	overflow: hidden;
 }
@@ -1202,6 +1202,7 @@ header .btn-right .btn:hover i {
 .contact-us h3 {
 	color: #1f626d;
 	font-size: 20px;
+	margin-top: 0;
 }
 .contact {
 	padding: 100px 0;
@@ -1385,6 +1386,7 @@ header .btn-right .btn:hover i {
 .about-us h3 {
 	color: #1f626d;
 	font-size: 20px;
+	margin-top: 0;
 }
 .about-us .time-line {
 	margin-top: 50px;
